@@ -1,145 +1,111 @@
-# Numpy, Pandas, Matplotlib, Seaborn
+# NumPy, Pandas, Matplotlib & Seaborn
 
-Welcome to the **Numpy, Pandas, Matplotlib, Seaborn** repository! This repository contains tutorials and examples demonstrating the usage of four essential Python libraries for data analysis and visualization: NumPy, Pandas, Matplotlib, and Seaborn.
+A hands-on collection of Jupyter notebooks for learning Python data analysis and visualization. The repository brings together practice material for **NumPy**, **Pandas**, **Matplotlib**, and **Seaborn**, with CSV and Excel files used by the examples.
 
-## 📋 Contents
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge" alt="Apache 2.0 license"></a>
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3">
+  <img src="https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter notebooks">
+</p>
 
-- [Introduction](#introduction)
-- [Topics Covered](#topics-covered)
-- [Key Concepts](#key-concepts)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Challenges Faced](#challenges-faced)
-- [Lessons Learned](#lessons-learned)
-- [Why I Created This Repository](#why-i-created-this-repository)
-- [License](#license)
-- [Contact](#contact)
+## About
 
----
+This is a practical learning repository: work through notebooks, run the examples, and adapt them to your own datasets. It covers foundational array operations, tabular data preparation, and common chart types, progressing from library basics to complete visualization examples.
 
-## 📖 Introduction
+## Contents
 
-This repository serves as a comprehensive guide to using NumPy, Pandas, Matplotlib, and Seaborn for data manipulation, analysis, and visualization. It covers fundamental concepts and provides practical examples to help you effectively utilize these libraries in your data science projects.
+| Folder | What you will find |
+| --- | --- |
+| [`Numpy/`](Numpy/) | Array creation and indexing, array operations, mathematics, linear algebra, statistics, reshaping, and file loading. |
+| [`Pandas/`](Pandas/) | Series and DataFrames, reading and writing files, indexing, sorting, filtering, missing values, and basic data inspection. |
+| [`Matplotlib/`](Matplotlib/) | Plot styling and customization, line and bar charts, histograms, pie charts, and examples using gas-price and FIFA data. |
+| [`Seaborn/`](Seaborn/) | Distribution, categorical, matrix, regression, and grid plots, plus styling and palette examples. |
 
----
+### Notebooks
 
-## 📘 Topics Covered
+- **NumPy:** [`Numpy from FreeCodeCamp.ipynb`](Numpy/Numpy%20from%20FreeCodeCamp.ipynb), [`Numpy from Harry.ipynb`](Numpy/Numpy%20from%20Harry.ipynb)
+- **Pandas:** [`Pandas Code with Harry.ipynb`](Pandas/Pandas%20Code%20with%20Harry.ipynb)
+- **Matplotlib:** [`Matplotlib by FreeCodeCamp.ipynb`](Matplotlib/Matplotlib%20by%20FreeCodeCamp.ipynb)
+- **Seaborn:** [`SB Tut.ipynb`](Seaborn/SB%20Tut.ipynb), [`Seaborn full course.ipynb`](Seaborn/Seaborn%20full%20course.ipynb)
 
-- Introduction to NumPy
-- Data manipulation with Pandas
-- Data visualization with Matplotlib
-- Advanced plotting with Seaborn
-- Combining NumPy, Pandas, Matplotlib, and Seaborn for data analysis
-- Practical examples and use cases
+## Quick start
 
----
+### Requirements
 
-## 🔑 Key Concepts
+- Python 3
+- Jupyter Notebook or JupyterLab
+- NumPy, Pandas, Matplotlib, Seaborn, and `openpyxl` (for the Excel example)
 
-- **NumPy:** Efficient array computations, mathematical functions, and linear algebra operations.
-- **Pandas:** Data structures for data manipulation, cleaning, and analysis.
-- **Matplotlib:** Creating static, animated, and interactive visualizations.
-- **Seaborn:** High-level interface for drawing attractive and informative statistical graphics.
+### Set up
 
----
+Clone the repository and move into its folder:
 
-## 🚀 Getting Started
+```bash
+git clone https://github.com/Md-Emon-Hasan/Numpy-Pandas-Matplotlib-Seaborn.git
+cd Numpy-Pandas-Matplotlib-Seaborn
+```
 
-To get started with this repository, follow these steps:
+Create and activate a virtual environment (recommended), then install the notebook dependencies:
 
-1. **Clone the repository:**
+```bash
+python -m venv .venv
+```
 
-   ```bash
-   git clone https://github.com/Md-Emon-Hasan/Numpy-Pandas-Matplotlib-Seaborn.git
-   ```
+Windows PowerShell:
 
-2. **Navigate to the project directory:**
+```powershell
+.venv\Scripts\Activate.ps1
+```
 
-   ```bash
-   cd Numpy-Pandas-Matplotlib-Seaborn
-   ```
+macOS / Linux:
 
-3. **Install the required packages:**
+```bash
+source .venv/bin/activate
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+Install the packages:
 
-4. **Explore the examples and tutorials:**
+```bash
+python -m pip install --upgrade pip
+python -m pip install numpy pandas matplotlib seaborn jupyter openpyxl
+```
 
-   - Browse through the directories to find examples and explanations for each topic.
+Open a terminal in the folder containing the notebook you want to run (for example, `Matplotlib/` or `Seaborn/`) and launch `jupyter notebook` there. Several notebooks load datasets by relative filename, so starting Jupyter in the notebook folder lets those paths resolve correctly. Run the cells in order.
 
----
+## Data files
 
-## 🤝 Contributing
+Sample datasets are kept alongside the notebooks that use them. For example, Matplotlib examples read `gas_prices.csv` and `fifa_data.csv`, while Seaborn examples use CSV and Excel files in `Seaborn/`. Keep these files in their current folders when running the examples. The FIFA dataset is relatively large, so its first load may take a little longer.
 
-Contributions are welcome! Here's how you can contribute to this repository:
+## Learning path
 
-1. **Fork the repository.**
-2. **Create a new branch:**
+1. Practice arrays and numerical operations with **NumPy**.
+2. Load, inspect, clean, and transform tables with **Pandas**.
+3. Build and customize charts with **Matplotlib**.
+4. Explore statistical and categorical visualizations with **Seaborn**.
 
-   ```bash
-   git checkout -b feature/new-feature
-   ```
+## Contributing
 
-3. **Make your changes:**
+Suggestions, corrections, and additional examples are welcome. To contribute:
 
-   - Add new examples, improve explanations, or fix errors.
+1. Fork the repository and create a feature branch.
+2. Make a focused change and include any required sample data.
+3. Open a pull request describing the change.
 
-4. **Commit your changes:**
+Please keep examples beginner-friendly and make sure notebook file paths work from the repository root.
 
-   ```bash
-   git commit -am 'Add a new feature or update'
-   ```
+## License
 
-5. **Push to the branch:**
+This project is distributed under the [Apache License 2.0](LICENSE).
 
-   ```bash
-   git push origin feature/new-feature
-   ```
+## Connect with me
 
-6. **Submit a pull request.**
-
----
-
-## 🛠️ Challenges Faced
-
-Throughout the development of this repository, challenges were encountered, including:
-
-- Ensuring compatibility across different versions of the libraries.
-- Creating engaging and informative examples to demonstrate various features.
-- Balancing between simplicity and completeness in tutorials.
+- 🌐 **Portfolio:** [emonlabs-ai.hitechparks.com](https://emonlabs-ai.hitechparks.com)
+- 💻 **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)
+- 💼 **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)
+- 🤗 **Hugging Face:** [emonHasan01](https://huggingface.co/emonHasan01)
+- 📧 **Email:** [emon.mlengineer@gmail.com](mailto:emon.mlengineer@gmail.com)
+- 📱 **WhatsApp:** [+880 1834-363533](https://wa.me/8801834363533)
 
 ---
 
-## 📚 Lessons Learned
-
-Key lessons learned from developing this repository include:
-
-- Enhanced understanding of data manipulation and analysis using NumPy and Pandas.
-- Improved ability to create informative and attractive visualizations using Matplotlib and Seaborn.
-- Importance of clear and concise documentation to aid learning and understanding.
-
----
-
-## 🌟 Why I Created This Repository
-
-I created this repository to provide a practical resource for data scientists and analysts looking to master NumPy, Pandas, Matplotlib, and Seaborn. By covering essential techniques and providing hands-on examples, I aim to help others effectively analyze and visualize their data.
-
----
-
-## 📜 License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for more details.
-
----
-
-## 📬 Contact
-
-- **Email:** [iconicemon01@gmail.com](mailto:iconicemon01@gmail.com)
-- **WhatsApp:** [+8801834363533](https://wa.me/8801834363533)
-- **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)
-- **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan)
-- **Facebook:** [Md Emon Hasan](https://www.facebook.com/mdemon.hasan2001/)
-
-Feel free to reach out for any questions, feedback, or collaboration opportunities!
+<p align="center">Made by <a href="https://github.com/Md-Emon-Hasan">Md Emon Hasan</a></p>
